@@ -18,6 +18,7 @@ class PhoneBook:
         else:                                       
             #New node will be added to the tail of the linked list
             self.tail.next = newNode     
+            newNode.previous = self.tail    
             self.tail = newNode    
             self.tail.next = None 
     def search(self, value):    
